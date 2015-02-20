@@ -54,7 +54,7 @@ xTest <- read.table("./UCI HAR Dataset/test/X_test.txt", header=FALSE)
 yTest <- read.table("./UCI HAR Dataset/test/y_test.txt", header=FALSE)
 subjectTest <- read.table("./UCI HAR Dataset/test/subject_test.txt")
 
-## Assigin column names to the TEST data imported above
+## Assign column names to the TEST data imported above
 colnames(subjectTest)  = "subjectId"; head(subjectTest)
 colnames(xTest)        = features[,2]; head(xTest[1:5, 1:5])
 colnames(yTest)        = "activityId"; head(yTest)
